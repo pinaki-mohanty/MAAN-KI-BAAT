@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANN KI BAAT</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fcd3d7; /* Light pink background color */
+        }
+
+        h1 {
+            color: #e64b4e; /* Dark red heading color */
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #ff6f81; /* Red button color */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #e63946; /* Darker red on hover */
+        }
+
+        p {
+            color: #e63946; /* Dark red text color */
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #e63946; /* Dark red link color */
+        }
+
+        a:hover {
+            color: #ff6f81; /* Red link color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>MANN KI BAAT</h1>
+
+    <div class="button-container">
+        <button class="button" onclick="game1()">HEY</button>
+        <button class="button" onclick="game2()">LISTEN</button>
+        <button class="button" onclick="game3()">I Want to Say You Something</button>
+        <button class="button" onclick="game4()">*</button>
+    </div>
+
+    <p>Follow me on Instagram: <a href="https://www.instagram.com/i_am_agent_p/" target="_blank">@i_am_agent_p</a></p>
+
+
+
+    <button class="button" id="back-button" onclick="goBack()" style="display: none;">Back</button>
+    <script src="randomwebpagescript.js"></script>
+</body>
+</html>
