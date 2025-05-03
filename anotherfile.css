@@ -1,38 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
 
+
+
+
 body {
   height: 100vh;
-  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  background-size: cover;
+
+  background-size: 1000px;
   background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
   background-position: center center;
-  font-family: 'Zeyada', cursive;
 }
 
 .paper {
   background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  width: 80vw;
-  max-width: 400px;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
-  position: absolute;
+  background-size: 500px;
+  background-position: center center;
+  padding: 20px 100px;
+/*  min-width: 800px; */
+  
   transform: rotateZ(-5deg);
-  border-radius: 12px;
-  transition: box-shadow 0.2s ease;
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  
+  position: absolute;
 }
 
 .paper.heart {
-  width: 180px;
-  height: 180px;
+  position: relative;
+  width: 200px;
+  height: 200px;
   padding: 0;
   border-radius: 50%;
-  background-color: #fff;
+}
+
+.paper.image {
+  padding: 10px;
+}
+.paper.image p {
+  font-size: 30px;
+}
+
+img {
+  max-height: 200px;
+  width: 100%;
+  user-select: none;
 }
 
 .paper.heart::after {
@@ -43,59 +56,18 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-size: 120px;
-  background-position: center;
+  background-size: 150px;
+  background-position: center center;
   background-repeat: no-repeat;
-  opacity: 0.7;
-}
-
-.paper.image {
-  padding: 15px;
-}
-
-.paper.image p {
-  font-size: 22px;
-  text-align: center;
-}
-
-img {
-  max-height: 180px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  user-select: none;
+  opacity: 0.6;
 }
 
 p {
-  font-size: 28px;
-  color: rgb(0, 0, 100);
+  font-family: 'Zeyada';
+  font-size: 50px;
+  color: rgb(0,0,100);
   opacity: 0.75;
-  margin: 10px 0;
-  text-align: center;
   user-select: none;
-}
-
-@media (max-width: 600px) {
-  .paper {
-    width: 90vw;
-    padding: 16px;
-    max-width: 90vw;
-  }
-
-  img {
-    max-height: 150px;
-  }
-
-  p {
-    font-size: 24px;
-  }
-
-  .paper.heart {
-    width: 150px;
-    height: 150px;
-  }
-
-  .paper.heart::after {
-    background-size: 100px;
-  }
+  
+  // filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
 }
